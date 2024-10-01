@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "支持 & 和 | 组合的字符串，方便以字符串的形式配置逻辑组合条件",
   "main": "./lib/cjs/index.cjs",
+  "types": "./lib/es/index.d.ts",
   "type": "module",
   "files": [
     "lib",
