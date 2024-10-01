@@ -1,4 +1,4 @@
-# and-or
+# logical-string
 
 支持 & 和 | 组合的字符串，方便以字符串的形式配置逻辑组合条件
 
@@ -6,19 +6,19 @@
 ## Installation
 
 ```bash
-npm i -S and-or
+npm i -S logical-string
 ```
 
 
 ## Usage
 
 ```js
-import { andOr } from 'and-or'
+import { parse } from 'logical-string'
 
 // 指定字符串中包含元音字母就返回 true
 const isContainsVowel = (str) => [ 'a', 'e', 'i', 'o', 'u' ].some(k => str.includes(k))
 
-andOr('a && (b || c)', isContainsVowel) // 等介于执行 `true && (false || false)`，所以最终返回 false
+parse('a && (b || c)', isContainsVowel) // 等介于执行 `true && (false || false)`，所以最终返回 false
 ```
 
 
