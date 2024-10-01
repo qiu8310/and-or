@@ -1,0 +1,71 @@
+{
+  "name": "and-or",
+  "version": "1.0.0",
+  "description": "支持 & 和 | 组合的字符串",
+  "main": "./lib/index.js",
+  "type": "module",
+  "files": [
+    "lib",
+    "*.md"
+  ],
+  "durka": {
+    "env": "node",
+    "commands": {
+      "rollup": "@durka/rollup-cli@<1.0.0",
+      "jest": "@durka/test-cli@<1.0.0",
+      "eslint": "@durka/lint-cli@<1.0.0"
+    }
+  },
+  "scripts": {
+    "test": "durka jest",
+    "test:watch": "npm run test -- --watch",
+    "lint": "durka eslint --ext .js,.ts ./src",
+    "lint:fix": "npm run lint -- --fix",
+    "build": "durka rollup",
+    "build:sourcemap": "npm run build -- --sourcemap",
+    "build:watch": "npm run build -- -w",
+    "release": "durka release",
+    "prepare": "durka run prepare && npm run lint && npm run test && npm run build",
+    "preinstall": "durka only-allow npm"
+  },
+  "engineStrict": true,
+  "engines": {
+    "node": ">=14.18.0",
+    "npm": ">=6"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "author": "Mora <qiuzhongleiabc@126.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@durka/cli": "latest",
+    "@types/node": "^20",
+    "tslib": "^2",
+    "typescript": "^5"
+  },
+  "jest": {
+    "preset": "./durka/vendors/jest-config"
+  },
+  "eslintConfig": {
+    "extends": "./durka/vendors/eslint-config"
+  },
+  "eslintIgnore": [
+    "lib",
+    "durka/*",
+    "!durka/config"
+  ],
+  "exports": {
+    "./foo": {
+      "types": "./lib/es/foo.d.ts",
+      "require": "./lib/cjs/foo.cjs",
+      "import": "./lib/es/foo.mjs"
+    },
+    ".": {
+      "types": "./lib/es/index.d.ts",
+      "require": "./lib/cjs/index.cjs",
+      "import": "./lib/es/index.mjs"
+    }
+  }
+}

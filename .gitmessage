@@ -1,0 +1,17 @@
+
+
+# Git Commit Message Format: <type>(<scope>): <subject>
+#
+# Git Commit Message Guides: https://www.yuque.com/qiu8310/share/git-commit-msg
+#
+# Type keywords: build chore ci docs feat fix perf refactor revert style test
+# Changelog keywords: Added Changed Breaks Deprecated Removed Fixed Security
+#
+# Example:
+#   fix($compile): Add unit tests for IE9
+#
+#   Older IEs serialize html uppercased, but IE9 does not...
+#
+#   Closes #392, #400
+#   Breaks foo.bar api, foo.baz should be used instead#
+#

@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "NodeNext",
+    "module": "NodeNext",
+    "importHelpers": true,
+    "removeComments": false,
+    "strict": true,
+    "alwaysStrict": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    // 此值在 5.5 中废弃了，可以使用 `string & keyof T` 来过滤出 string，详见 https://github.com/microsoft/TypeScript/issues/51909
+    // "keyofStringsOnly": true,
+    "sourceMap": true, // jest coverage 需要 sourceMap 才能准确定位到文件位置
+    "declaration": false,
+    "noEmitOnError": true,
+    "noEmit": true,
+    "lib": ["es2018"],
+    "target": "es2018",
+    "rootDir": "src",
+    "baseUrl": "."
+  },
+  "include": ["src", "durka"],
+}

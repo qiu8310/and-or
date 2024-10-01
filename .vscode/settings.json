@@ -1,0 +1,16 @@
+{
+  "eslint.nodePath": "./durka/vendors",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+  ],
+  "durka.templates": [
+    {
+      "pattern": "**/src/*",
+      "template": ".vscode/tpl-module"
+    }
+  ]
+}

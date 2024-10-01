@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+git config --local commit.template ./.gitmessage
+git config --local core.hooksPath ./durka/githooks

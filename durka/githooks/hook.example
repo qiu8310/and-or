@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# ref: https://git-scm.com/docs/githooks
+
+./node_modules/.bin/durka some-command
