@@ -1,3 +1,15 @@
+## 1.0.1 (2024-10-01)
+
+
+### Features
+
+* init ([4594042](https://github.com/qiu8310/and-or/commit/45940421d9f7938bc433a58982132aee418ffcb2))
+* init new project from @durka/example-ts-node-lib__boilerplate ([e70b334](https://github.com/qiu8310/and-or/commit/e70b33446544e615e987e8aececf568350bca961))
+* npm 发布不通过,重新调整名称 ([e4aa9f5](https://github.com/qiu8310/and-or/commit/e4aa9f56277dc42b0ee37a6cd886ec0576cacd51))
+* update main field ([b9b2371](https://github.com/qiu8310/and-or/commit/b9b2371aad0d3a83218ad9a2aa29bc6c1aea209a))
+
+
+
 
 <!--
 

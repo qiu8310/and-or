@@ -1,6 +1,6 @@
 {
   "name": "logical-string",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "支持 & 和 | 组合的字符串，方便以字符串的形式配置逻辑组合条件",
   "main": "./lib/cjs/index.cjs",
   "type": "module",
@@ -63,5 +63,9 @@
       "require": "./lib/cjs/index.cjs",
       "import": "./lib/es/index.mjs"
     }
+  },
+  "repository": {
+    "type": "git",
+    "repository": "git@github.com:qiu8310/and-or.git"
   }
 }
