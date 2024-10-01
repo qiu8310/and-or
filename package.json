@@ -2,7 +2,7 @@
   "name": "and-or",
   "version": "1.0.0",
   "description": "支持 & 和 | 组合的字符串，方便以字符串的形式配置逻辑组合条件",
-  "main": "./lib/index.js",
+  "main": "./lib/cjs/index.cjs",
   "type": "module",
   "files": [
     "lib",
