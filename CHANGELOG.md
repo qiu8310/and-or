@@ -1,3 +1,12 @@
+## [1.0.2](https://github.com/qiu8310/and-or/compare/v1.0.1...v1.0.2) (2024-10-01)
+
+
+### Features
+
+* add types for cjs ([e6c6ed2](https://github.com/qiu8310/and-or/commit/e6c6ed2a88e14ac71e79af9d7e702c6e00a2a006))
+
+
+
 ## 1.0.1 (2024-10-01)
 
 
